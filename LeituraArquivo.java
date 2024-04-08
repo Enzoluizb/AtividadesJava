@@ -12,8 +12,12 @@ public class LeituraArquivo {
 
         try {
             leitor = new BufferedReader(new FileReader(arquivo));
-            linha = leitor.readLine();
-            System.out.println(linha);
+            linha = leitor.readLine(); // cabecalho
+            linha = leitor.readLine(); // proxima linha
+            while (linha != null) {
+                System.out.println(linha); // imprime
+                linha = leitor.readLine(); // le a proxima linha
+            }
             leitor.close();
         } catch (Exception e) {
             e.printStackTrace();
