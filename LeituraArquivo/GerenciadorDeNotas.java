@@ -1,3 +1,4 @@
+package LeituraArquivo;
 import java.util.Scanner;
 
 public class GerenciadorDeNotas {

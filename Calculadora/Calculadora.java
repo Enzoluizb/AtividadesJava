@@ -1,3 +1,5 @@
+package Calculadora;
+
 public class Calculadora {
 
     double memoria;
